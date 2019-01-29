@@ -11,7 +11,7 @@ def video_to_frames(input_loc, output_loc,video_name):
     print (frameRate)
 
     while(cap.isOpened()):
-        frameId = cap.get(30) #current frame number
+        frameId = cap.get(10) #current frame number
         ret, frame = cap.read()
         if (ret != True):
             break
