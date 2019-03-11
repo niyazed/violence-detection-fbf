@@ -75,6 +75,7 @@ X_train.shape
 #     np.save(label + '.npy', vector)
 
 
+
 # In[7]:
 
 
