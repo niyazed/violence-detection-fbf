@@ -9,8 +9,8 @@ def main():
 
 def process(f):
     inFile = f
-    outFile = f[:-3] + "mp3"
-    cmd = "ffmpeg -i {} -vn  -ac 2 -ar 44100 -ab 320k -f mp3 {}".format(inFile, outFile)
+    outFile = f[:-3] + "wav"
+    cmd = "ffmpeg -i {} -vn  -ac 2 -ar 44100 -ab 320k -f wav {}".format(inFile, outFile)
     os.popen(cmd)
 
 main()
