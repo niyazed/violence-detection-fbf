@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Falcon Inc.</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script>
+		window.onload = function () 
+		{
+
+			var chart = new CanvasJS.Chart("chartContainer", {
+				animationEnabled: true,
+				theme: "dark2", // "light1", "light2", "dark1", "dark2"
+				title:{
+					text: "Top Oil Reserves"
+				},
+				axisY: {
+					title: "Reserves(MMbbl)"
+				},
+				data: [{        
+					type: "column",  
+					showInLegend: true, 
+					legendMarkerColor: "grey",
+					legendText: "MMbbl = one million barrels",
+					dataPoints: [      
+						{ y: 300878, label: "Venezuela" },
+						{ y: 266455,  label: "Saudi" },
+						{ y: 169709,  label: "Canada" },
+						{ y: 158400,  label: "Iran" },
+						{ y: 142503,  label: "Iraq" },
+						{ y: 101500, label: "Kuwait" },
+						{ y: 97800,  label: "UAE" },
+						{ y: 80000,  label: "Russia" }
+					]
+				}]
+			});
+			chart.render();
+
+		}
+	</script>
+  
+</head>
+<body>
+    <div class="right-all">
+    	<h1 class="logo">Falcon Inc.</h1>
+    	<div class="upload">
+    		<div class="alert alert-dismissible alert-info">
+    			<button type="button" class="close" data-dismiss="alert">&times;</button>
+    			<strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+			</div>
+			<div class="form-group">
+				<div class="input-group mb-3">
+					<div class="custom-file">
+						<input type="file" class="custom-file-input" id="inputGroupFile02">
+						<label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+					</div>
+					<div class="input-group-append">
+						<span class="input-group-text" id="">Upload</span>
+					</div>
+				</div>
+			</div>
+			<div>
+				<button type="button" class="btn btn-success">Predict</button>
+				<button type="button" class="btn btn-info">Webcam</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4">
+				<video style="margin-left: 10%;margin-right: 50%;" width="550" height="440" controls>
+				<source src="movie.mp4" type="video/mp4">
+					<source src="movie.ogg" type="video/ogg">
+					Your browser does not support the video tag.
+				</video>
+			</div> 
+			<div class="col-sm-4">
+				<div id="chartContainer" style="height: 98%; width: 100%;margin-left: 50%;margin-right: 50%"></div>
+				<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+			</div> 
+		</div>
+	</div>
+</body>
+</html>
+
