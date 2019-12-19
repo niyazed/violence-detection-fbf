@@ -62,4 +62,4 @@ web_templates/
 
 ## Another Work
 
-Link - `https://github.com/niyazed/violence-video-classification`
+#### To explore more check - https://github.com/niyazed/violence-video-classification
