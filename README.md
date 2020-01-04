@@ -37,7 +37,7 @@ inference/
 
 ```
 all_test_scripts/
-              # store all other approach
+              # stored all other approach
               # of violence classification
      
      
